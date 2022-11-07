@@ -1,0 +1,106 @@
+* {
+	vertical-align: baseline;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+}
+.non {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+.nona {
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    display: none;
+}
+.non__find {
+    font-size: medium;
+    font-family: Source Sans Pro;
+}
+.main__subm {
+    width: 70px;
+    height: 30px;
+    font-size: medium;
+    font-family: Source Sans Pro;
+    transition: 0.5s;
+    margin-left: 10px;
+    border: 0;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+.main__finder {
+    width: 400px;
+    height: 40px;
+    border-radius: 25px;
+    padding:  0 20px;
+    font-size: medium;
+    font-family: Source Sans Pro;
+}
+p{
+    font-size: medium;
+    font-family: Source Sans Pro;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main__form {
+    font-size: medium;
+    font-family: Source Sans Pro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    height: 40px;
+    width: 100px;
+    margin-bottom: 350px;
+    margin-left: 1770px;
+    position: absolute;
+    transition: 0.5s;
+    border-radius: 30px;
+    border: 1px;
+    font-family: Ubuntu;
+    background: white;
+}
+.button:hover {
+    box-shadow: 0 0 5px;
+}
+
+.main__subm:hover {
+
+    transform: scale(1.1);
+    background: #1e9bff;
+    letter-spacing: 3px;
+    border: 0;
+    box-shadow: 0 0 17px #0e5d9e;
+    border: 0.3px;
+}
+.weather {
+    display: flex;
+}

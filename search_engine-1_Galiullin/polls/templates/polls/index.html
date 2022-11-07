@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" id="theme-link">
+</head>
+<body style="background: url('../static/123.jpg');">
+    <button class="button" onclick="go()">Change theme</button>
+    <div class="container">
+        <div class="main">
+            <div class="weather">{{ w }} <br> {{ morning }} <br> {{ day }}</div>
+            <form action="" class="main__form">
+                <input name="q" type="main__text" placeholder="Найти" class="main__finder">
+                <input type="submit" style ='' value="FIND"  class="main__subm">
+            </form>
+                    {% if sentences == '0 результатов поиска' %}
+                    <div class="non">
+                        <div class="non__find">0 результатов поиска</div>
+
+                    </div>
+                    {% else %}
+                    <div class="non" id="non">
+                        {% for i in sentences %}
+                            <p id="non__find">{{ i }}.</p>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+        </div>
+    </div>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>
